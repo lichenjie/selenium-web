@@ -58,7 +58,6 @@ class BasePage(object):
             logger.info("Had take screenshot and save to folder : /screenshots")
         except NameError as e:
             logger.error("Failed to take screenshot! %s" % e)
-            self.get_windows_img()
 
     # 定位元素方法
     def find_element(self, selector):
