@@ -11,8 +11,10 @@ class Logger(object):
             指定保存日志的文件路径，日志级别，以及调用文件
             将日志存入到指定的文件中
         '''
+        print(os.path.abspath(__file__))
         logging.config.fileConfig("app/resources/logback.conf")
         self.logger = logging.getLogger(logger)
+
 
 
     def getlog(self):
