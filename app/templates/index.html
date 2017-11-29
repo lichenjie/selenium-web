@@ -1,0 +1,56 @@
+{% extends "bootstrap/base.html" %}
+
+
+{% block title %}自动化测试{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-inverse" role="navigation" >
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">框架</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">功能测试</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    自动化测试
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">selenium</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">持续集成</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#">性能测试</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+{% endblock %}
+
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-heading">职业介绍</div>
+    <div class="panel-body">
+        <p>测试工程师，软件质量的把关者，工作起点高，发展空间大。我国的软件测试职业还处于一个发展的阶段，所以测试工程师具有较大发展前景。
+目前传统的软件行业还是以软件测试工程师为主，但是在新兴的互联网行业大多还是以QA来命名这个职位，也就是质量保证。
+        </p>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">Software Development Engineer in Test</li>
+        <li class="list-group-item">Software Development Engineer in Test</li>
+        <li class="list-group-item">Software Development Engineer in Test</li>
+        <li class="list-group-item">Software Development Engineer in Test</li>
+    </ul>
+    <div class="panel-heading">历史发展</div>
+    <div class="panel-body">
+    <p>计算机软件产品检验员(即软件测试工程师)早在2005年就被劳动和社会保障部门列入第四批新职业中。经过短短几年的发展，软件测试员已跻身IT业抢手人才之列。究其原因主要有二。　首先是企业对测试“经济价值”的认可。
+有调查显示，通过必要测试，软件缺陷可减少75%，而软件的投资回报率则可增长到350%。对于一个软件企业来说，只有它的产品或是项目质量完全地得到认可，业务才有可能进一步扩展。很多中大型软件企业设立了单独的测试部，与开发部并行运作，测试人员也与开发人员平起平坐。
+除了产业的自身需求外，国家政策的大力扶植也是软件测试大力发展的原因。2007年，信产部联合五部委颁布124号文件，特别强调要“加快培养软件测试人才，开展软件评测技术的研究”。为了配合2008年奥运会的召开，国家科技部门、北京市政府主管部门和北京奥组委等投入近20亿，组建10个重大的智能型项目，涉及上百个软件系统。如此庞大的信息服务系统，对软件测试人员的需求更是剧增，也将进一步扩大人才缺口。 </p>
+    </div>
+</div>
+
+{% endblock %}
