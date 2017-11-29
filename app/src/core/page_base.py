@@ -2,7 +2,7 @@ import time
 import os.path
 from selenium.common.exceptions import NoSuchElementException
 from app.src.core import logging
-
+from app.src.core import config_parser
 
 # create a logger instance
 logger = logging.Logger(__name__).getlog()
@@ -12,6 +12,7 @@ class BasePage(object):
     """
     定义一个页面基类，让所有页面都继承这个类，封装一些常用的页面操作方法到这个类
     """
+    config = config_parser.ConfigParse().getconfig()
 
     def __init__(self, driver):
         self.driver = driver
@@ -50,7 +51,7 @@ class BasePage(object):
         """
         在这里我们把file_path这个参数写死，直接保存到我们项目根目录的一个文件夹.\Screenshots下
         """
-        file_path = os.path.dirname(os.path.abspath('.')) + '/screenshots/'
+        file_path = self.config.get("screenshots", "path")
         rq = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
         screen_name = file_path + rq + '.png'
         try:
@@ -144,7 +145,6 @@ class BasePage(object):
     # 或者网页标题
     def get_page_title(self):
         logger.info("Current page title is %s" % (self.driver.title))
-        print("测试")
         return self.driver.title
 
     @staticmethod

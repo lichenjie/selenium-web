@@ -36,7 +36,7 @@ PyMySQL==0.7.10
 python-dateutil==2.6.0
 python-editor==1.0.3
 requests==2.1.0
-selenium==2.45.0
+selenium==3.6.0
 six==1.10.0
 SQLAlchemy==1.1.9
 thrift==0.10.0
