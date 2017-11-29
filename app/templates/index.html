@@ -4,7 +4,7 @@
 {% block title %}自动化测试{% endblock %}
 
 {% block navbar %}
-<nav class="navbar navbar-inverse" role="navigation" >
+<nav class="navbar navbar-inverse" role="navigation" style="background: rgba(0,0,0,0.8);">
     <div class="container-fluid">
     <div class="navbar-header">
         <a class="navbar-brand" href="#">框架</a>
@@ -32,6 +32,7 @@
 
 
 {% block content %}
+<div class="container" >
 <div class="panel panel-default">
     <div class="panel-heading">职业介绍</div>
     <div class="panel-body">
@@ -66,10 +67,11 @@
 
     </div>
 </div>
+</div>
 
 
 
-<footer style="background: #cccccc" class="footer navbar-fixed-bottom">
+<footer style="background: rgba(0,0,0,1);" class="footer navbar-fixed-bottom">
         <div class="wrap-footer">
             <div class="container">
                 <div class="row">
@@ -91,10 +93,6 @@
                     </div>
                     <div class="col-md-4">
                         <ul class="list-inline quicklinks">
-                            {#                            <li><a href="#">Privacy Policy</a>#}
-                            </li>
-                            {#                            <li><a href="#">Terms of Use</a>#}
-                            </li>
                         </ul>
                     </div>
                 </div>
