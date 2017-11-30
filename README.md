@@ -4,4 +4,4 @@
 
 2.在selenium-web目录下新建logs文件夹
 
-3.python3 manage runserver 启动服务器
+3.python3 manage.py runserver 启动服务器
