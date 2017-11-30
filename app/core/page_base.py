@@ -57,7 +57,7 @@ class BasePage(object):
         screen_name = file_path + rq + '.png'
         try:
             self.driver.get_screenshot_as_file(screen_name)
-            logger.info("Had take screenshot and save to folder : /screenshots")
+            logger.info("Had take screenshot and save to folder : %s" %screen_name)
         except NameError as e:
             logger.error("Failed to take screenshot! %s" % e)
 

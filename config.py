@@ -61,6 +61,6 @@ config = {
     'heroku': HerokuConfig,
     'unix': UnixConfig,
 
-    'default': TestingConfig
+    'default': ProductionConfig
 }
 
