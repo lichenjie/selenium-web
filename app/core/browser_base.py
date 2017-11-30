@@ -14,6 +14,7 @@ class BrowserEngine(object):
         browser = self.config.get("browserType", "browserName")
         logger.info("You had select %s browser." % browser)
 
+        logger.info("platform.system():%s" % platform.system())
         if browser == "Firefox":
             self.driver = webdriver.Firefox(executable_path=self.config.get("driver", "mac_firefox_driver_path"))
             logger.info("Starting firefox browser.")
