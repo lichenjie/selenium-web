@@ -215,3 +215,31 @@ JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=seleni
 JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=selenium&json=1&p=3&sid=1459_19037_13701_21099_18559_25178_20718&sugId=b941f8c600019d198&cb=jQuery110204537868468040147_1512024777832&_=1512024777841, line 1: TypeError: jQuery110204537868468040147_1512024777832 is not a function
 1512024779300	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
 1512024781923	Marionette	INFO	New connections will no longer be accepted
+1512025878836	geckodriver	INFO	geckodriver 0.19.0
+1512025878850	geckodriver	INFO	Listening on 127.0.0.1:51292
+1512025879916	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/nh/gk_gynz111311cn8gvmwty7r0000gn/T/rust_mozprofile.p7BTqtypjd8g"
+1512025881306	Marionette	INFO	Enabled via --marionette
+2017-11-30 15:11:23.123 plugin-container[7572:353997] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa33b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-11-30 15:11:23.126 plugin-container[7572:353997] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa603, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1512025883430	Marionette	INFO	Listening on port 51301
+1512025883458	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1512025883519	Marionette	DEBUG	loaded listener.js
+1512025883542	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512025883761	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512025883763	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_mac_82990d4.js, line 4: ReferenceError: c is not defined
+1512025884393	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.baidu.com/"
+1512025884603	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.baidu.com/"
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=se&json=1&p=3&sid=1450_21087_18560_17001_25178_20927&csor=2&pwd=s&cb=jQuery110202404365118761006_1512025884169&_=1512025884172, line 1: TypeError: jQuery110202404365118761006_1512025884169 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=selen&json=1&p=3&sid=1450_21087_18560_17001_25178_20927&csor=5&pwd=sele&cb=jQuery110202404365118761006_1512025884169&_=1512025884175, line 1: TypeError: jQuery110202404365118761006_1512025884169 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=sele&json=1&p=3&sid=1450_21087_18560_17001_25178_20927&csor=4&pwd=sel&cb=jQuery110202404365118761006_1512025884169&_=1512025884174, line 1: TypeError: jQuery110202404365118761006_1512025884169 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=s&json=1&p=3&sid=1450_21087_18560_17001_25178_20927&csor=1&cb=jQuery110202404365118761006_1512025884169&_=1512025884171, line 1: TypeError: jQuery110202404365118761006_1512025884169 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=seleni&json=1&p=3&sid=1450_21087_18560_17001_25178_20927&csor=6&pwd=selen&cb=jQuery110202404365118761006_1512025884169&_=1512025884176, line 1: TypeError: jQuery110202404365118761006_1512025884169 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=sel&json=1&p=3&sid=1450_21087_18560_17001_25178_20927&csor=3&pwd=se&cb=jQuery110202404365118761006_1512025884169&_=1512025884173, line 1: TypeError: jQuery110202404365118761006_1512025884169 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=selenium&json=1&p=3&sid=1450_21087_18560_17001_25178_20927&csor=8&pwd=seleniu&cb=jQuery110202404365118761006_1512025884169&_=1512025884178, line 1: TypeError: jQuery110202404365118761006_1512025884169 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=seleniu&json=1&p=3&sid=1450_21087_18560_17001_25178_20927&csor=7&pwd=seleni&cb=jQuery110202404365118761006_1512025884169&_=1512025884177, line 1: TypeError: jQuery110202404365118761006_1512025884169 is not a function
+1512025885463	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512025887824	Marionette	INFO	New connections will no longer be accepted

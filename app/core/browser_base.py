@@ -14,23 +14,13 @@ class BrowserEngine(object):
         browser = self.config.get("browserType", "browserName")
         logger.info("You had select %s browser." % browser)
 
-        systemstr = platform.system()
-        if systemstr == "Mac":
-            if browser == "Firefox":
-                self.driver = webdriver.Firefox(executable_path=self.config.get("driver", "mac_firefox_driver_path"))
-                logger.info("Starting firefox browser.")
-            elif browser == "Chrome":
-                self.driver = webdriver.Chrome(executable_path=self.config.get("driver", "mac_chrome_driver_path"))
-                logger.info("Starting Chrome browser.")
+        if browser == "Firefox":
+            self.driver = webdriver.Firefox(executable_path=self.config.get("driver", "mac_firefox_driver_path"))
+            logger.info("Starting firefox browser.")
+        elif browser == "Chrome":
+            self.driver = webdriver.Chrome(executable_path=self.config.get("driver", "mac_chrome_driver_path"))
+            logger.info("Starting Chrome browser.")
 
-        if systemstr == "Linux":
-            if browser == "Firefox":
-                self.driver = webdriver.Firefox(
-                executable_path=self.config.get("driver", "linux_firefox_driver_path"))
-                logger.info("Starting firefox browser.")
-            elif browser == "Chrome":
-                self.driver = webdriver.Chrome(executable_path=self.config.get("driver", "linux_chrome_driver_path"))
-                logger.info("Starting Chrome browser.")
 
     # read the browser type from config.properties file, return the driver
     def open_browser(self):
