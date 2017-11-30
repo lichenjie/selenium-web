@@ -1,34 +1,5 @@
-{% extends "bootstrap/base.html" %}
+{% include 'header.html' %}
 
-
-{% block title %}自动化测试{% endblock %}
-
-{% block navbar %}
-<nav class="navbar navbar-inverse" role="navigation" style="background: rgba(0,0,0,0.8);">
-    <div class="container-fluid">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#">框架</a>
-    </div>
-    <div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">功能测试</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    自动化测试
-                    <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">selenium</a></li>
-                    <li class="divider"></li>
-                    <li><a href="javascript:;">持续集成</a></li>
-                </ul>
-            </li>
-            <li class=""><a href=";#">性能测试</a></li>
-        </ul>
-    </div>
-    </div>
-</nav>
-{% endblock %}
 
 
 {% block content %}
@@ -71,35 +42,7 @@
 
 
 
-<footer style="background: rgba(0,0,0,1);" class="footer navbar-fixed-bottom">
-        <div class="wrap-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-footer col-md-3">
-                        <h2 class="footer-title">关于我们</h2>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <p>Copyright &copy; 2017 jacklibra All rights reserved.</p>
-                        <p>技术支持jacklibra提供.</p>
-
-                    </div>
-                    <div class="col-md-4">
-
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline quicklinks">
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </footer>
+{% include 'footer.html' %}
 {% endblock %}
 
 

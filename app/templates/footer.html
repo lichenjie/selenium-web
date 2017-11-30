@@ -1,0 +1,47 @@
+
+<footer style="background: rgba(0,0,1,1);" class="footer navbar-fixed-bottom">
+        <div class="wrap-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-footer col-md-3">
+                        <h2 class="footer-title">关于我们</h2>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Copyright &copy; 2017 jacklibra All rights reserved.</p>
+                        <p>技术支持jacklibra提供.</p>
+
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</footer>
+
+{% block script%}
+<script>
+    $(function(){
+       $('.navbar-nav li').on('click',function(){
+           $(this).addClass("active").siblings().removeClass("active");
+       });
+       $('.navbar-brand').on('click',function(){
+           $(this).addClass("active");
+           $('.navbar-nav li').removeClass("active");
+       });
+//       $('.dropdown-menu li').on('click',function(){
+//           $(this).addClass("active").siblings().removeClass("active");
+//       });
+    });
+</script>
+{% endblock %}

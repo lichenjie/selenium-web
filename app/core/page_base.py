@@ -1,6 +1,6 @@
 import time
 
-from app.src.core import logging
+from app.core import logging
 from selenium.common.exceptions import NoSuchElementException
 
 from app.core import config_parser

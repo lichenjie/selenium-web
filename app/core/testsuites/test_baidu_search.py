@@ -4,7 +4,6 @@ import unittest
 from app.core.browser_base import BrowserEngine
 from app.core.pageobjects.baidu_homepage import HomePage
 
-
 class BaiduSearch(unittest.TestCase):
 
     @classmethod
