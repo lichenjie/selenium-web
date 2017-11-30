@@ -19,7 +19,7 @@ class BasePage(object):
         self.driver = driver
         logger.info("浏览器驱动初始化")
 
-    # quit browser and end testing
+    # quit browser and end test
     def quit_browser(self):
         self.driver.quit()
         logger.info("浏览器退出")
