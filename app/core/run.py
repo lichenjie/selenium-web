@@ -4,6 +4,7 @@ import os
 import unittest
 import time
 from app.core.config_parser import  ConfigParse
+import os.path
 
 def run():
     config = ConfigParse().getconfig()
@@ -13,6 +14,8 @@ def run():
     now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
 
     # 设置报告名称格式
+    if not os.path.exists(report_path):
+        os.mkdir(report_path)
     HtmlFile = report_path + now + "HTMLtemplate.html"
     fp = open(HtmlFile, "wb")
 
