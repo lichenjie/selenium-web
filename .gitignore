@@ -2,3 +2,5 @@
 logs
 app/templates/result
 **.pyc
+.log
+venv
