@@ -2,6 +2,7 @@ from selenium import webdriver
 from app.core import config_parser
 from app.core import logging
 import platform
+from pyvirtualdisplay import Display
 
 
 logger = logging.Logger(__name__).getlog()
@@ -11,6 +12,8 @@ class BrowserEngine(object):
     config = config_parser.ConfigParse().getconfig()
 
     def __init__(self):
+        self.display = Display(visible=0, size=(800, 600))
+        self.display.start()
         browser = self.config.get("browserType", "browserName")
         logger.info("You had select %s browser." % browser)
 
@@ -39,6 +42,7 @@ class BrowserEngine(object):
     def quit_browser(self):
         logger.info("Now, Close and quit the browser.")
         self.driver.quit()
+        self.display.stop()
 
 
 
