@@ -16,10 +16,10 @@ class BrowserEngine(object):
 
         logger.info("platform.system():%s" % platform.system())
         if browser == "Firefox":
-            self.driver = webdriver.Firefox(executable_path=self.config.get("driver", "mac_firefox_driver_path"))
+            self.driver = webdriver.Firefox(executable_path=self.config.get("driver", "linux_firefox_driver_path"))
             logger.info("Starting firefox browser.")
         elif browser == "Chrome":
-            self.driver = webdriver.Chrome(executable_path=self.config.get("driver", "mac_chrome_driver_path"))
+            self.driver = webdriver.Chrome(executable_path=self.config.get("driver", "linux_chrome_driver_path"))
             logger.info("Starting Chrome browser.")
 
 
